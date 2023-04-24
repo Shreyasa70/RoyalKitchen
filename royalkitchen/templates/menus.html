@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENUS | Royal Kitchen</title>
+    <link rel = "icon" href ="{% static 'logo.jpg' %}" type = "image/x-icon">
+    <style>
+        h1{
+    font-size: 8rem;
+    display: block;
+    background-size: auto;
+    text-align: center;
+    background-image: url({% static 'contrast-monochrome-sky-photography-spoon-photographer-884485-wallhere.com-01.jpeg' %});
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom:0;
+    background-size: 100%;
+    border-bottom: 60px;
+}
+body{
+    background:linear-gradient(to right,black,rgb(0, 0, 0),black);
+}
+a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    display:flex ;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+main{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:aliceblue;
+    font-size: 50px;
+    border:0;
+    line-height:45px;
+    top:0;
+    bottom:0;
+    padding:0;
+}
+.para{
+    text-align: right;
+    border-top: -10px;
+    top: 0%;
+    bottom: 0%;
+    margin-top: 0%;
+    padding: 0%;   
+}
+img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+    
+}
+h5{
+    margin-bottom: 2%;
+}
+a:hover,
+a:focus-visible{
+    color: red;
+}
+
+
+footer{
+    background-color: grey;
+    color: black;
+    text-align: center;
+    
+    bottom: 0%;
+    display: block;
+   
+   background-size: auto;
+   width: 100%;
+}
+    </style>
+</head> 
+<body>
+<div>
+   <h1 class="heading"><h1><font class="royal" color=white>Royal</font><font color=red> Kitchen</font></h1>
+</div>
+   <header>
+<div>
+        <nav class="menu">
+            <ul>
+                <li class="home">
+                    <a href="/index">HOME</a>
+                </li> 
+                <li class="menus">
+                    <a href="/menus">MENUS</a>
+                </li>
+                <li class="contactus">
+                    <a href="/contactus">CONTACT US</a>
+                </li>
+                <li class="aboutus">
+                    <a href="/aboutus">ABOUT US</a>
+                </li>
+            </ul>
+        <!-- </na-->
+    </div>
+    </header>
+    <main>
+        <section class="burger">
+            <h2 style="color:red">Our Special Menu</h1>
+            <h5>Try our new<br><font color="red">Spicy Chicken Burger</font></h5>
+            <img src="{% static 'burger.jpg' %}" alt="Spicy chicken burger" width="300px" hight="300px"<p class="para">We provide you the best Spicy Veg and non Veg Burger with better taste.</p>           
+        </section>
+        <section class="burger">
+            <h5>Try our new<br><font color="red">Varities of Pizza</font></h5>
+            <img src="{% static 'pizza.jpg' %}" alt="Varity of Pizzas" width="400px" hight="400px"<p class="para">Different Varities of Pizzas available, So try something new.</p>
+        </section>
+        <section class="burger">
+            <h5>Try our new<br><font color="red">French Fries</font></h5>
+            <img src="{% static 'fries.jpg' %}" alt="Varity of Pizzas" width="300px" hight="400px"<p class="para">If you miss Fries, you will miss everything.</p>
+        </section>
+        <section class="burger">
+            <h5>Try our new<br><font color="red">Veg and Non Veg Fried rice</font></h5>
+            <img src="{% static 'friedrice.jpg' %}" alt="Friedrice" width="500px" hight="500px"<p class="para">Our Fried rice makes you feel good.</p>
+        </section>
+        
+
+    </main>
+<div>
+    <footer class="copy">&#169 Copyrights reserved under <b>Shreyas288</b>
+</div>
+</body>
+</html>

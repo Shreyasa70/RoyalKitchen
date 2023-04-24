@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Kitchen</title>
+    <style>
+        h1{
+    font-size: 8rem;
+    display: block;
+    background-size: auto;
+    text-align: center;
+    background-image: url(contrast-monochrome-sky-photography-spoon-photographer-884485-wallhere.com-01.jpeg);
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom:0;
+    background-size: 100%;
+    border-bottom: 60px;
+   
+}
+body{
+    background:linear-gradient(to right,black,rgb(0, 0, 0),black);
+    
+}
+a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+    text-decoration: none;
+    transition: 1s;
+
+    position: sticky;
+    top:0;
+    left:0;
+    right:0; 
+  
+}
+ul{
+    list-style-type: none;
+    display:flex ;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+main{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:aliceblue;
+    font-size: 50px;
+    margin-bottom: 0%;
+}
+h2{
+    margin:0%;
+}
+.offers{
+    line-height: 30px;
+    font-size: 20px;
+}
+h5{
+    color:red;
+    margin:0%;
+    top:0;
+}
+.menu{
+    position: static;
+    top:0;
+}
+html{scroll-behavior: smooth;}
+
+footer{
+    background-color: grey;
+    color: black;
+    text-align: center;
+    
+    bottom: 0%;
+    display: block;
+   position: sticky;
+   background-size: auto;
+   width: 100%;
+    
+}
+a:hover,
+a:focus-visible{
+    color: red;
+}
+.add{
+    font-size: larger;
+}
+    </style>
+</head> 
+<body>
+   <h1 class="heading"><h1><font class="royal" color=white>Royal</font><font color=red> Kitchen</font></h1>
+   <header>
+        <nav class="menu">
+            <ul>
+                <li class="home">
+                    <a href="/index">HOME</a>
+                </li> 
+                <li class="menus">
+                    <a href="/menus">MENUS</a>
+                </li>
+                <li class="contactus">
+                    <a href="/contactus">CONTACT US</a>
+                </li>
+                <li class="aboutus">
+                    <a href="/aboutus">ABOUT US</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <h2 style="color:rgb(255, 0, 0)">OUR OFFERS</h2>
+        <h2 class="offers">* 70% Off on 200 and above.</h2>
+        <h2 class="offers">* Discount for Student.</h2>
+        <h2 class="offers">* Special Offers for family.</h2>
+        <h2 class="offers">* Special discount on Weekends.</h2>
+        <h2 class="offers">* Combo offers avilable.<br>T&C Apply.</h2>
+        <br>
+        <h5 style="color:red;size:15px;">We provide you the best quality of food and with awsome taste! <br><br> We have Branches in Bangalore, Hydrabad, Mumbai, Kochi & Pune.<br>And we are also available in Dubai, Australia, Thailand, Malasia & Tokyo.</h5>
+        <img src="{% static 'pexels-lisa-fotios-2193600.jpg' %}" alt="Royal Kitchen" width="1000px" hight="500px"/> 
+    </main>
+    <footer class="copy">&#169 Copyrights reserved under <b>Shreyas288</b></footer>
+
+    
+</body>
+</html>
